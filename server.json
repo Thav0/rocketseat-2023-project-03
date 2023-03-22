@@ -23,6 +23,22 @@
       "category": "Alimentação",
       "price": 109.9,
       "createdAt": "2023-03-21T22:01:13.162Z"
+    },
+    {
+      "description": "fgff",
+      "category": "fff",
+      "price": 333,
+      "type": "income",
+      "createdAt": "2023-03-22T20:36:10.898Z",
+      "id": 4
+    },
+    {
+      "description": "Pão",
+      "category": "Alimentação",
+      "price": 3,
+      "type": "outcome",
+      "createdAt": "2023-03-22T20:44:19.106Z",
+      "id": 5
     }
   ]
 }
