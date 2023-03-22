@@ -1,0 +1,28 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14001,
+      "createdAt": "2023-03-21T22:01:53.162Z"
+    },
+    {
+      "id": 2,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 3000,
+      "createdAt": "2023-03-21T21:01:13.162Z"
+    },
+    {
+      "id": 3,
+      "description": "Ifood - Comida Japonesa",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 109.9,
+      "createdAt": "2023-03-21T22:01:13.162Z"
+    }
+  ]
+}
