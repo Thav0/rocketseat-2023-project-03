@@ -11,9 +11,8 @@ import {
   TransactionTypeButton,
 } from './styles'
 import { Controller, useForm } from 'react-hook-form'
-import { api } from '../../lib/axios'
-import { useContext } from 'react'
 import { TransactionsContext } from '../../contexts/TransactionsContext'
+import { useContextSelector } from 'use-context-selector'
 
 const newTransactionSchema = z.object({
   description: z.string(),
@@ -35,7 +34,10 @@ export function NewTransactionModal() {
     resolver: zodResolver(newTransactionSchema),
   })
 
-  const { createTransaction } = useContext(TransactionsContext)
+  const createTransaction = useContextSelector(
+    TransactionsContext,
+    (context) => context.createTransaction,
+  )
 
   async function handleCreateNewTransaction(data: NewTransactionFormInputs) {
     createTransaction(data)
