@@ -59,12 +59,12 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
       setTransactions([response.data, ...transactions])
     },
-    [],
+    [transactions],
   )
 
   useEffect(() => {
     fetchTransactions()
-  }, [])
+  }, [fetchTransactions])
 
   return (
     <TransactionsContext.Provider
